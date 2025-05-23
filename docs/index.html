@@ -29,10 +29,18 @@
   <main>
 
     <!-- ========= Home (saudação + currículo condensado) ========= -->
-    <section id="home">
-      <h1>Olá! Eu sou Vandilson Alves 👋</h1>
-      <p>Desenvolvedor backend apaixonado por desempenho, segurança e infraestrutura.</p>
-      <!-- Bio curta, links rápidos etc. -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Olá, sou<br><span class="accent">Vandilson Alves</span></h1>
+        <p>Desenvolvedor backend focado em desempenho, segurança e infraestrutura.</p>
+
+        <a href="#contact" class="btn">Fale comigo</a>
+      </div>
+
+      <div class="hero-img">
+        <!-- Troque profile.jpg pela sua foto; provisório: avatar GitHub -->
+        <img src="assets/img/profile.jpg" alt="Foto de Vandilson">
+      </div>
     </section>
 
     <!-- ========= Sobre ========= -->
@@ -59,7 +67,15 @@
     <section id="projects">
       <h2>Projetos em destaque</h2>
       <div class="cards">
-        <!-- cards ou lista de projetos -->
+        <article class="card">
+          <h3>Projeto Fullstack Base</h3>
+          <p>API REST em Node.js + TypeScript, CRUD de tarefas, Docker.</p>
+          <div class="actions">
+            <a href="https://github.com/ashogun33/fullstack-base" class="btn btn-sm" target="_blank">Código →</a>
+          </div>
+        </article>
+
+      <!-- Copie + cole novos <article class="card">…</article> conforme precisar -->
       </div>
     </section>
 

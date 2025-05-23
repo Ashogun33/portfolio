@@ -9,14 +9,14 @@
 
 /* === Variáveis de cor (fáceis de trocar depois) ============== */
 :root {
-  --bg: #fdfdfd;
-  --fg: #222;
-  --accent: #0070f3;            /* muda depois pela paleta que quiser */
+  --bg: #ffffff;
+  --fg: #38322d;
+  --accent: #a70925;
 }
 
 /* === Tipografia ============================================== */
 body {
-  font-family: system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   line-height: 1.6;
   color: var(--fg);
   background: var(--bg);

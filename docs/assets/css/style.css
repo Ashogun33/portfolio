@@ -11,9 +11,9 @@
 :root {
   --bg: #ffffff;
   --fg: #38322d;
-  --accent: #a70925;
+  --accent: #E44332; /* vermelho Todoist /
+  --bg-alt: #F7F8F9; /* cinza super-claro em seções intercaladas */
 }
-
 /* === Tipografia ============================================== */
 body {
   font-family: 'Inter', system-ui, sans-serif;

@@ -1,0 +1,79 @@
+/* === Reset rápido ============================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Variáveis de cor (fáceis de trocar depois) ============== */
+:root {
+  --bg: #fdfdfd;
+  --fg: #222;
+  --accent: #0070f3;            /* muda depois pela paleta que quiser */
+}
+
+/* === Tipografia ============================================== */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+/* Títulos */
+h1, h2, h3 {
+  line-height: 1.2;
+  margin-bottom: .5rem;
+}
+
+h1 { font-size: 2.2rem;   }
+h2 { font-size: 1.6rem;   }
+h3 { font-size: 1.3rem;   }
+
+/* Links */
+a       { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* === Layout geral ============================================ */
+header {
+  background: var(--bg);
+  position: sticky; top: 0;
+  border-bottom: 1px solid #ddd;
+  padding: .75rem 1rem;
+  z-index: 100;
+}
+
+nav {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+}
+
+main, footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Seções */
+section {
+  padding: 3rem 0;
+}
+
+/* Cards de projetos (placeholder) */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: .875rem;
+  color: #666;
+}
+

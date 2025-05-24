@@ -135,3 +135,7 @@ p.spaced {
   margin-top: 1.5rem; /* ou 40px, ou o que quiser */
 }
 
+#about ul {
+  padding-left: 2rem;
+}
+

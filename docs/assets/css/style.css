@@ -9,17 +9,42 @@
 
 /* === Variáveis de cor (fáceis de trocar depois) ============== */
 :root {
-  --bg: #ffffff;
-  --fg: #38322d;
-  --accent: #E44332; /* vermelho Todoist /
-  --bg-alt: #F7F8F9; /* cinza super-claro em seções intercaladas */
+  --bg: #0d1117;
+  --fg: #e5e7eb;
+  --bg-alt: #1f2937;
+  --accent: #0ea5e9;
 }
 /* === Tipografia ============================================== */
 body {
-  font-family: 'Inter', system-ui, sans-serif;
-  line-height: 1.6;
+  font-family: 'Fira Sans', system-ui, sans-serif;
+  background-color: var(--bg);
   color: var(--fg);
+  line-height: 1.6;
+}
+
+header {
   background: var(--bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  background: var(--bg-alt);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--fg);
+}
+
+.card h3 {
+  color: var(--fg);
+}
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
 }
 
 /* Títulos */

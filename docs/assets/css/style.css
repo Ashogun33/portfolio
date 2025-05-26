@@ -197,4 +197,17 @@ p.spaced {
   display: block;
   color: var(--fg);
 }
+.terminal-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1rem;
+  background-color: var(--fg);
+  margin-left: .25rem;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { background: transparent; }
+  50% { background: var(--fg); }
+}
 

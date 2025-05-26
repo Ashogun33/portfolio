@@ -214,4 +214,40 @@ p.spaced {
   from, to { background: transparent; }
   50% { background: var(--fg); }
 }
+.cli-card {
+  background: var(--bg-alt);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.cli-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.cli-line {
+  color: var(--accent);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.cli-prompt {
+  margin-right: .5rem;
+  color: var(--fg);
+}
+
+.cli-card p {
+  color: var(--fg);
+  margin-bottom: .75rem;
+  font-size: 0.9rem;
+}
+
+.cli-actions {
+  display: flex;
+  gap: .75rem;
+}
 
